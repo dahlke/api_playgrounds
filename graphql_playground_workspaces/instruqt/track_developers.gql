@@ -1,0 +1,12 @@
+query {
+  tracks (organizationSlug: "hashicorp", orderBy: title_ASC) {
+    id
+    title
+
+    developers {
+      profile {
+        display_name
+      }
+    }
+  }
+}

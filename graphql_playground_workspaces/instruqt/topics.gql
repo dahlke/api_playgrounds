@@ -1,0 +1,6 @@
+ query {
+  topics(organizationslug: "hashicorp") {
+    title
+    permalink
+  }
+ }

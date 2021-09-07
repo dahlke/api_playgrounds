@@ -1,0 +1,33 @@
+query GetTrackStatistics ($trackID: String) {
+  statistics (trackID: $trackID) {
+    track{
+      id
+      title
+
+			started_total
+			completed_total
+			restarted_total
+
+      track_series {
+        date
+        started
+        completed
+      }
+
+      challenges {
+        title
+        unlocked_total
+        started_total
+        completed_total
+        attempts_min
+        attempts_max
+        attempts_avg
+        attempts_stddev
+        duration_min
+        duration_max
+        duration_avg
+        duration_stddev
+      }
+    }
+  }
+}

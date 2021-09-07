@@ -4,6 +4,8 @@
 
 ## Configuration
 
+See [`.graphqlrc`](.graphqlrc).
+
 - Endpoint
 	- `https://api.github.com/graphql`
 

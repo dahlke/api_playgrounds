@@ -1,0 +1,34 @@
+query {
+  tracks (organizationSlug: "hashicorp", orderBy: title_ASC) {
+    id
+    title
+    slug
+    permalink
+
+		# version
+    # revision
+    last_update
+
+    play_count
+    median_starttime
+
+    creating
+    created
+    failed
+    stopped
+    completed
+
+    challenges {
+      id
+      slug
+      title
+    }
+
+    developers {
+      profile {
+        display_name
+        slug
+      }
+    }
+  }
+}
